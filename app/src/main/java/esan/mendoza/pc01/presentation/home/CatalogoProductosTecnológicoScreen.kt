@@ -28,10 +28,10 @@ data class Producto(
 fun CatalogoProductosTecnológicoScreen() {
     val productos = remember {
         listOf(
-            Producto("Laptop Dell XPS 13", 4500.0, "Laptop", "https://example.com/laptop.jpg"),
-            Producto("iPhone 14 Pro", 5200.0, "Smartphone", "https://example.com/iphone.jpg"),
-            Producto("Audífonos Sony WH-1000XM4", 1200.0, "Accesorio", "https://example.com/audifonos.jpg"),
-            Producto("Monitor LG UltraWide", 1800.0, "Accesorio", "https://example.com/monitor.jpg")
+            Producto("Laptop Dell XPS 13", 4500.0, "Laptop", "https://media.falabella.com/falabellaPE/132241996_01/w=1500,h=1500,fit=pad"),
+            Producto("iPhone 14 Pro", 5200.0, "Smartphone", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/HP_Elite_x3_%2826600260562%29.jpg/500px-HP_Elite_x3_%2826600260562%29.jpg"),
+            Producto("Audífonos Sony WH-1000XM4", 1200.0, "Accesorio", "https://www.jbl.com.pe/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwecf2f72f/JBL_TOUR_One%20M2_Product%20Image_Hero_Black.jpg?sw=270&sh=330&sm=fit&sfrm=png"),
+            Producto("Monitor LG UltraWide", 1800.0, "Accesorio", "https://www.jbl.com.pe/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb27d0119/JBL4305P_System_Front_Black_WithRemote_MPHiRez_WEBBLACKHERO.jpg?sw=270&sh=330&sm=fit&sfrm=png")
         )
     }
 
