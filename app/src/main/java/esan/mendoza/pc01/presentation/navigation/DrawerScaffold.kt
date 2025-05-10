@@ -30,6 +30,14 @@ fun DrawerScafold(navController: NavController, content: @Composable () -> Unit)
 
                 // Home navigation
                 NavigationDrawerItem(
+                    label = { Text(text = "Home") },
+                    selected = false,
+                    onClick = {
+                        navController.navigate("home")
+                        scope.launch { drawerState.close() }
+                    }
+                )
+                NavigationDrawerItem(
                     label = { Text(text = "calculadora canina") },
                     selected = false,
                     onClick = {
