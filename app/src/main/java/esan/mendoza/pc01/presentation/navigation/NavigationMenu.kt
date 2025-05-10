@@ -8,13 +8,14 @@ import androidx.navigation.compose.composable
 import esan.mendoza.pc01.presentation.home.CalculadoraEdadCaninaScreen
 import esan.mendoza.pc01.presentation.home.CatalogoProductosTecnológicoScreen
 import esan.mendoza.pc01.presentation.home.ConversorDivisaScreen
+import esan.mendoza.pc01.presentation.home.MenuPrincipalScreen
 
 
 @Composable
 fun NavigationMenu(){
     val navController = rememberNavController()
 
-    NavHost(navController = navController, startDestination = "calculadoraCanina"){
+    NavHost(navController = navController, startDestination = "home"){
         composable("calculadoraCanina"){
             CalculadoraEdadCaninaScreen()
         }
@@ -24,6 +25,11 @@ fun NavigationMenu(){
         composable ("conversion" ){
             DrawerScafold(navController) {
                 ConversorDivisaScreen()
+            }
+        }
+        composable ("home" ){
+            DrawerScafold(navController) {
+                MenuPrincipalScreen(navController)
             }
         }
 

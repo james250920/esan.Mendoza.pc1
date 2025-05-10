@@ -41,6 +41,7 @@ fun CatalogoProductosTecnológicoScreen() {
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
+            .padding(bottom = 16.dp),
     ) {
         LazyColumn(
             modifier = Modifier.weight(1f)

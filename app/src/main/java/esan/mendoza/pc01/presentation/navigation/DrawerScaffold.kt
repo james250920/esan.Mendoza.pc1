@@ -24,7 +24,7 @@ fun DrawerScafold(navController: NavController, content: @Composable () -> Unit)
         drawerState = drawerState,
         drawerContent = {
             ModalDrawerSheet {
-                Spacer(modifier = Modifier.height(12.dp))
+                Spacer(modifier = Modifier.height(16.dp))
                 Text(text = "Menu principal")
                 HorizontalDivider()
 
@@ -69,7 +69,7 @@ fun DrawerScafold(navController: NavController, content: @Composable () -> Unit)
         Scaffold(
             topBar = {
                 TopAppBar(
-                    title = { Text(text = "Country App") },
+                    title = { Text(text = "PC01 navigation") },
                     navigationIcon = {
                         IconButton(onClick = {
                             scope.launch { drawerState.open() }
